@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <!--Insertion des balises meta et link pour introduire le CSS et BOOTSTRAP-->
+        <meta charset="utf_8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Association 7ici - Evenement</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <link href="style2.css" rel="stylesheet">
+    </head>
+    <body class="bg-dark-subtle bg-gradient">
+        <!--Création de la barre de navigation en haut de page-->
+        <nav class="navbar navbar-expand-lg border border-bold border-light" id="navbarToggleContent">
+            <div class="container-fluid">
+                <!--Insertion de l'image et nom de l'association-->
+                <a class="nav-brand" href="#">
+                    <img src="https://7iciatelierboutique.files.wordpress.com/2021/07/logo-7ici.jpg?w=240">
+                </a>
+                <h1 class="text-light ms-2">Atelier - Boutique LYON</h1>
+                <!--Insertion d'un bouton burger pour le passage à l'écran mobile-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="collapseNavbar">
+                <ul class="navbar-nav">
+                    <!--Lien de navigation pour retourner sur la page relative a l'association-->
+                    <li class="nav-item">
+                        <a class="nav-link LienNavbar fs-4" href="file:///C:/Users/phili/OneDrive/Bureau/Evalutaion%20STUDI%20HTML/index2.html">Accueil</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Début de la description de l'évenement-->
+        <div class="container-fluid pDescription pt-5">
+            <header>
+                <div class="row justify-content-center">
+                <h2 class="text-decoration-underline text-center">Rencontre entre artistes</h2>
+                <p class="pt-5 fs-4 col-8">L'association 7ici a l'honneur de vous annoncer l'organisation d'un évenement de rencontre entre 
+                    artistes et présentation.
+                </p>
+                <br>
+                <p class="pt-5 fs-4 col-8">Lors de cet évenements, tous les artistes de Lyon voulant rencontrer des personnes partageant les memes passions 
+                    qu'eux ou juste se faire connaitre seront les bienvenues.
+                </p>
+                <br> 
+                <p class="pt-5 fs-4 col-8">Si vous etes un artiste et aimeriez participer à cet évenement, nous vous invitons a remplir le formulaire 
+                    en bas de la page.
+                </p>
+                <br>
+                <p class="pt-5 fs-4 col-8">Si vous etes un visiteur voulant découvrir des artistes et ce qu'ils proposent, je vous 
+                    invite a vous rendre le <span class="CouleurPrimaire">week-end du 23 Juin 2023 au 25 Juin 2023</span> 
+                    de <span class="CouleurPrimaire">11h à 19h</span> devant la boutique 7ici au 
+                    <span class="CouleurPrimaire">Rue des Capucins, 69001 Lyon</span>
+                </p>
+                </div>
+            </header>
+            <!--Début du formulaire pour les artistes souhaitant participer-->
+        </div class="container-fluid pt-5">
+        <div class="row justify-content-center">
+            <form class="border border-3 border-light rounded col-7">
+                <!--Création des champs stylisés avec BOOTSTRAP-->
+                <div>
+                    <label for="Name" class="form-label">Nom:</label>
+                    <input id="Name" type="text" class="form-control">
+                </div><br>
+                <div>
+                    <label for="Email" class="form-label">Adresse Email</label>
+                    <input id="Email" type="email" class="form-control">
+                </div><br>
+                <div class="pb-2">
+                    <label for="contenu" class="form-label">Votre art/talent</label>
+                    <input id="contenu" type="text" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-light mb-2">Soumettre</button>
+            </form>
+            </div>
+        </div>
+        <!--Début du pied de page avec les liens de contact et le lien vers la page évenement-->
+        <div class="container-fluid BgPrimaire mt-5 text-light">
+            <footer id="Contact">
+                <div class="row justify-content-evenly">
+                    <div class="py-3 col-3">
+                        <h4 class="text-decoration-underline">Adresse E-mail</h4>
+                        <a href="mailto:7iciboutik@gmail.com" class="TextNoir AutresLien">7iciboutik@gmail.com</a>
+                    </div>
+                    <div class="py-3 col-3">
+                        <h4 class="text-decoration-underline">Téléphone</h4>
+                        <a href="tel:04 87 77 77 80" class="TextNoir AutresLien">04 87 77 77 80</a>
+                    </div>
+                    <div class="py-3 col-3">
+                        <h4 class="text-decoration-underline">Instagram</h4>
+                        <a href="https://www.instagram.com/7iciatelierboutique/?hl=fr#" class="TextNoir AutresLien">@7iciatelierboutique</a>
+                    </div>
+                    <div class="py-3 col-3">
+                        <h4 class="text-decoration-underline">Facebook</h4>
+                        <a href="https://m.facebook.com/7iciatelierboutique/?locale2=fr_FR" class="TextNoir AutresLien">@7iciatelierboutique</a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!--Liens JavaScript pour faire fonctionner BOOTSTRAP-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+    </body>
+</html>
